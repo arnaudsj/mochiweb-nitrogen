@@ -18,8 +18,8 @@ skelcopy(DestDir, Name) ->
         filename:join(filename:dirname(code:which(?MODULE)), ".."),
         filename:join([DestDir, Name, "libs", "mochiweb"])),
     ok = file:make_symlink(
-        filename:join(filename:dirname(code:which(?MODULE)), "../lib/nitrogen-trunk"),
-        filename:join([DestDir, Name, "libs", "nitrogen"])).
+         filename:join(filename:dirname(code:which(?MODULE)), "../lib/nitrogen-trunk"),
+         filename:join([DestDir, Name, "libs", "nitrogen"])).
 
 
 %% Internal API
