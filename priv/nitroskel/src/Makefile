@@ -1,9 +1,5 @@
-include ../support/include.mk
-
-all: $(EBIN_FILES)
-
-debug:
-	$(MAKE) DEBUG=-DDEBUG
+all: 
+	erl -make
 
 clean:
-	rm -rf $(EBIN_FILES)
+	rm -rf ../ebin/*.beam

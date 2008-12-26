@@ -1,5 +1,13 @@
-all:
+all: start-dev
+
+compile:
 	(cd src;$(MAKE))
 
+start-dev: 
+	(bin/start-dev.sh)
+
+start:
+	(bin/start.sh)
+
 clean:
-	(cd src;$(MAKE) clean)
+	rm -rf ./ebin/*.beam

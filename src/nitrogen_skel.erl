@@ -14,12 +14,27 @@ skelcopy(DestDir, Name) ->
                    N + 1
            end,
     skelcopy(src(), DestDir, Name, LDst),
-    ok = file:make_symlink(
+
+	case file:make_symlink(
+		filename:join([DestDir, Name, "src/" , [Name|".app"]]),
+		filename:join([DestDir, Name, "ebin/" , [Name|".app"]])
+		) of
+		{error,eexist} -> io:format("~nwarning: .app file already exists");
+		ok -> io:format("~nerlang app created")
+	end,
+
+    case file:make_symlink(
         filename:join(filename:dirname(code:which(?MODULE)), ".."),
-        filename:join([DestDir, Name, "libs", "mochiweb"])),
-    ok = file:make_symlink(
+        filename:join([DestDir, Name, "libs", "mochiweb"])) of
+		{error,eexist} -> io:format("~nwarning: symlink already exists for mochiweb framework");
+		ok -> io:format("~nsymlink created for mochiweb framework")
+	end,
+    case file:make_symlink(
          filename:join(filename:dirname(code:which(?MODULE)), "../lib/nitrogen-trunk"),
-         filename:join([DestDir, Name, "libs", "nitrogen"])).
+         filename:join([DestDir, Name, "libs", "nitrogen"])) of
+		{error,eexist} -> io:format("~nwarning: symlink already exists for nitrogen framework~n");
+		ok -> io:format("~nsymlink created for mochiweb framework~n")
+	end.
 
 
 %% Internal API
