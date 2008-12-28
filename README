@@ -1,1 +1,23 @@
-MochiWeb is an Erlang library for building lightweight HTTP servers.
+MochiWeb-Nitrogen is fork of Nitrogen in order to integrate it closer with Mochiweb and make it easier and automated to create new Nitrogen powered site using Mochiweb light http framework.
+
+No major new code was rewritten, however here are some noteworthy improvements:
+
+- scripts/new_nitrogen.erl allows you to create a complete skelleton of nitrogen over mochiweb for your new projects. It compiles cleanly using erlang and is then ready to go!
+
+- Nitrogen basic www/ templates/ locations were moved slightly to something that makes more sense (at least to me ;)
+
+- Mochiweb compilation was improved by using Emakefile instead of std makefile process
+
+- Logic was simplified for the mapping of request to Nitrogen by defaulting ALL requests not comporting an extension to go to Nitrogen dispatcher (e.g. http://localhost:8000/index.html tries to serve static file index.html in www folder, whereas http://localhost:8000/index calls the index.erl module which then renders using Nitrogen framework)
+
+- Misc clean up and simplifications of dependencies.
+
+This fork takes advantage of GitHub's power and both Mochiweb and Nitrogen upstream modifications will make it into this branch via a simple pull command.
+
+Feedback is welcome and encouraged, however keep in mind it is still very much a work in progress.
+
+Cheers!
+
+Sébastien Arnaud
+arnaudsj@gmail.com
+
