@@ -1,0 +1,152 @@
+=== Suite started at 2008-12-14 22:01:10
+=== Starting test, 7 test cases
+=cases        7
+=user         arnaudsj
+=host         aura
+=hosts        aura 
+=emulator_vsn 5.6.5
+=emulator     beam
+=otp_release  R12B
+=started      2008-12-14 22:01:10
+=case    ecouch_db_SUITE:init_per_suite
+=logfile ecouch_db_suite.init_per_suite.html
+=started 2008-12-14 22:01:10
+=ended   2008-12-14 22:01:10
+=result    ok
+=elapsed   0.181342
+=case    ecouch_db_SUITE:test_database_creation
+=logfile ecouch_db_suite.test_database_creation.html
+=started 2008-12-14 22:01:10
+=== ERROR! init_per_testcase crashed!
+	Line: {ecouch_db_SUITE,init_per_testcase,<a href="ecouch_db_suite.src.html#20">27</a>}
+	Reason: {{badmatch,{error,econnrefused}},
+                 [{test_helper,recreate_db,0},
+                  {ecouch_db_SUITE,init_per_testcase,2},
+                  {test_server,my_apply,3},
+                  {test_server,init_per_testcase,3},
+                  {test_server,run_test_case_eval1,4},
+                  {test_server,run_test_case_eval,6}]}
+
+=ended   2008-12-14 22:01:10
+=result    skipped
+=== *** SKIPPED *** test case 1 of 7
+=case    ecouch_db_SUITE:test_database_deletion
+=logfile ecouch_db_suite.test_database_deletion.html
+=started 2008-12-14 22:01:10
+=== ERROR! init_per_testcase crashed!
+	Line: {ecouch_db_SUITE,init_per_testcase,<a href="ecouch_db_suite.src.html#20">27</a>}
+	Reason: {{badmatch,{error,econnrefused}},
+                 [{test_helper,recreate_db,0},
+                  {ecouch_db_SUITE,init_per_testcase,2},
+                  {test_server,my_apply,3},
+                  {test_server,init_per_testcase,3},
+                  {test_server,run_test_case_eval1,4},
+                  {test_server,run_test_case_eval,6}]}
+
+=ended   2008-12-14 22:01:10
+=result    skipped
+=== *** SKIPPED *** test case 2 of 7
+=case    ecouch_db_SUITE:test_database_listing
+=logfile ecouch_db_suite.test_database_listing.html
+=started 2008-12-14 22:01:10
+=== ERROR! init_per_testcase crashed!
+	Line: {ecouch_db_SUITE,init_per_testcase,<a href="ecouch_db_suite.src.html#20">27</a>}
+	Reason: {{badmatch,{error,econnrefused}},
+                 [{test_helper,recreate_db,0},
+                  {ecouch_db_SUITE,init_per_testcase,2},
+                  {test_server,my_apply,3},
+                  {test_server,init_per_testcase,3},
+                  {test_server,run_test_case_eval1,4},
+                  {test_server,run_test_case_eval,6}]}
+
+=ended   2008-12-14 22:01:10
+=result    skipped
+=== *** SKIPPED *** test case 3 of 7
+=case    ecouch_db_SUITE:end_per_suite
+=logfile ecouch_db_suite.end_per_suite.html
+=started 2008-12-14 22:01:10
+=ended   2008-12-14 22:01:10
+=result    ok
+=elapsed   0.022147
+=case    ecouch_doc_SUITE:init_per_suite
+=logfile ecouch_doc_suite.init_per_suite.html
+=started 2008-12-14 22:01:10
+=ended   2008-12-14 22:01:10
+=result    ok
+=elapsed   0.00295
+=case    ecouch_doc_SUITE:test_doc_creation_without_id
+=logfile ecouch_doc_suite.test_doc_creation_without_id.html
+=started 2008-12-14 22:01:10
+=== ERROR! init_per_testcase crashed!
+	Line: {ecouch_doc_SUITE,init_per_testcase,<a href="ecouch_doc_suite.src.html#20">27</a>}
+	Reason: {{badmatch,{error,econnrefused}},
+                 [{test_helper,recreate_db,0},
+                  {ecouch_doc_SUITE,init_per_testcase,2},
+                  {test_server,my_apply,3},
+                  {test_server,init_per_testcase,3},
+                  {test_server,run_test_case_eval1,4},
+                  {test_server,run_test_case_eval,6}]}
+
+=ended   2008-12-14 22:01:10
+=result    skipped
+=== *** SKIPPED *** test case 4 of 7
+=case    ecouch_doc_SUITE:test_doc_creation_with_id
+=logfile ecouch_doc_suite.test_doc_creation_with_id.html
+=started 2008-12-14 22:01:10
+=== ERROR! init_per_testcase crashed!
+	Line: {ecouch_doc_SUITE,init_per_testcase,<a href="ecouch_doc_suite.src.html#20">27</a>}
+	Reason: {{badmatch,{error,econnrefused}},
+                 [{test_helper,recreate_db,0},
+                  {ecouch_doc_SUITE,init_per_testcase,2},
+                  {test_server,my_apply,3},
+                  {test_server,init_per_testcase,3},
+                  {test_server,run_test_case_eval1,4},
+                  {test_server,run_test_case_eval,6}]}
+
+=ended   2008-12-14 22:01:10
+=result    skipped
+=== *** SKIPPED *** test case 5 of 7
+=case    ecouch_doc_SUITE:test_doc_get
+=logfile ecouch_doc_suite.test_doc_get.html
+=started 2008-12-14 22:01:10
+=== ERROR! init_per_testcase crashed!
+	Line: {ecouch_doc_SUITE,init_per_testcase,<a href="ecouch_doc_suite.src.html#20">27</a>}
+	Reason: {{badmatch,{error,econnrefused}},
+                 [{test_helper,recreate_db,0},
+                  {ecouch_doc_SUITE,init_per_testcase,2},
+                  {test_server,my_apply,3},
+                  {test_server,init_per_testcase,3},
+                  {test_server,run_test_case_eval1,4},
+                  {test_server,run_test_case_eval,6}]}
+
+=ended   2008-12-14 22:01:10
+=result    skipped
+=== *** SKIPPED *** test case 6 of 7
+=case    ecouch_doc_SUITE:test_doc_get_all
+=logfile ecouch_doc_suite.test_doc_get_all.html
+=started 2008-12-14 22:01:10
+=== ERROR! init_per_testcase crashed!
+	Line: {ecouch_doc_SUITE,init_per_testcase,<a href="ecouch_doc_suite.src.html#20">27</a>}
+	Reason: {{badmatch,{error,econnrefused}},
+                 [{test_helper,recreate_db,0},
+                  {ecouch_doc_SUITE,init_per_testcase,2},
+                  {test_server,my_apply,3},
+                  {test_server,init_per_testcase,3},
+                  {test_server,run_test_case_eval1,4},
+                  {test_server,run_test_case_eval,6}]}
+
+=ended   2008-12-14 22:01:10
+=result    skipped
+=== *** SKIPPED *** test case 7 of 7
+=case    ecouch_doc_SUITE:end_per_suite
+=logfile ecouch_doc_suite.end_per_suite.html
+=started 2008-12-14 22:01:10
+=ended   2008-12-14 22:01:11
+=result    ok
+=elapsed   0.00458
+=== TEST COMPLETE, 0 ok, 0 failed, 7 skipped of 7 test cases
+
+=finished   2008-12-14 22:01:11
+=failed     0
+=successful 0
+=skipped    7

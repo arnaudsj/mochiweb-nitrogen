@@ -1,0 +1,77 @@
+9
+
+dir
+11
+http://ecouch.googlecode.com/svn/trunk
+http://ecouch.googlecode.com/svn
+
+
+
+2008-11-14T20:12:41.582725Z
+11
+metajack
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+7a1feb39-d349-0410-94eb-ad0e97a7db51
+
+tests
+dir
+
+doc
+dir
+
+src
+dir
+
+support
+dir
+
+ebin
+dir
+
+Makefile
+file
+
+
+
+
+2008-12-15T04:00:36.000000Z
+60cee645b0ae0d50a34c69d85a8ad4a0
+2008-07-27T13:38:23.184458Z
+9
+yoan.blanc
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+161
+

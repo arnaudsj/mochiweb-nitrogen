@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 32
+/svn/!svn/ver/9/trunk/tests/test
+END
+test_helper.erl
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/9/trunk/tests/test/test_helper.erl
+END
+ecouch_db_SUITE.erl
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/9/trunk/tests/test/ecouch_db_SUITE.erl
+END
+ecouch_doc_SUITE.erl
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/9/trunk/tests/test/ecouch_doc_SUITE.erl
+END
