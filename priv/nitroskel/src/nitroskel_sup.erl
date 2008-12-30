@@ -42,13 +42,16 @@ upgrade() ->
 %% @doc supervisor callback.
 init([]) ->
     Ip = case os:getenv("MOCHIWEB_IP") of false -> "0.0.0.0"; Any -> Any end,   
-    WebConfig = [
-         {ip, Ip},
-                 {port, 8000},
-                 {docroot, nitroskel_deps:local_path(["priv", "www"])}],
-    Web = {nitroskel_web,
-           {nitroskel_web, start, [WebConfig]},
-           permanent, 5000, worker, dynamic},
-
-    Processes = [Web],
-    {ok, {{one_for_one, 10, 10}, Processes}}.
+	Ports = [8000, 8001],
+	Processes = lists:foldl(
+		fun(Port, Acc) ->
+	    	WebConfig = [
+		         {ip, Ip},
+		                 {port, Port},
+		                 {docroot, nitroskel_deps:local_path(["priv", "www"])}],
+		    Web = {list_to_atom(atom_to_list(nitroskel_web) ++ "_" ++ integer_to_list(Port)),
+		           {nitroskel_web, start, [WebConfig]},
+		           permanent, 5000, worker, dynamic},
+			[Web|Acc]
+		end, [], Ports),
+    {ok, {{one_for_one, 10, 10}, lists:reverse(Processes)}}.

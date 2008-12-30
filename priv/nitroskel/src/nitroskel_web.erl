@@ -9,13 +9,13 @@
 -export([start/1, stop/0, loop/2]).
 
 %% External API
-
 start(Options) ->
     {DocRoot, Options1} = get_option(docroot, Options),
+	{Port, _} = get_option(port, Options1),
     Loop = fun (Req) ->
                    ?MODULE:loop(Req, DocRoot)
            end,
-    mochiweb_http:start([{name, ?MODULE}, {loop, Loop} | Options1]).
+    mochiweb_http:start([{name, list_to_atom(atom_to_list(?MODULE) ++ "_" ++ integer_to_list(Port))}, {loop, Loop} | Options1]).
 
 stop() ->
     mochiweb_http:stop(?MODULE).
