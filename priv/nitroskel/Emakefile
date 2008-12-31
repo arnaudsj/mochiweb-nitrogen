@@ -1,0 +1,10 @@
+% Emakefile (for faster compiling)
+{ ['./src/*', './src/mochiweb/*', './src/nitroskel/*'], [
+	{ i, "./include" },
+	{ i, "./libs/nitrogen/include"},
+	{ i, "./libs/mochiweb/include"},
+	{ doc },
+	{ outdir, "./ebin" },
+	debug_info
+]}.
+

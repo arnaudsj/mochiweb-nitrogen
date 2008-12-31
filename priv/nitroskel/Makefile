@@ -1,7 +1,7 @@
 all: start-dev
 
 compile:
-	(cd src;$(MAKE))
+	erl -make
 
 start-dev: 
 	(bin/start-dev.sh)
