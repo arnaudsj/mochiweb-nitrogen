@@ -1,12 +1,44 @@
+/*** API ***/
+
+.element_description {
+}
+
+.element_see_also_label {
+}
+
+.element_see_also_link {
+	padding-right: 8px;
+}
+
+.element_attribute_name,
+.element_event_name {
+	font-weight: bold;
+}
+
+.element_attribute_datatype {
+	font-size: 90%;
+}
+
+.element_attribute_datatype,
+.element_attribute_description,
+.element_event_description {
+	display: block;
+	padding-left: 20px;
+}
+
+/*** SAMPLES ***/
+
 .stats {
-	font-size: 120%;
+	color: #999;
+	font-size: 0.85em;
+	display: block;
 }
 
 .stats .count {
 	position: relative;
 	top: 2px;
 	font-weight: bold;
-	font-size: 250%;
+	font-size: 1.8em;
 	color: #777;
 }
 
@@ -134,28 +166,21 @@ table.tiny td input
 	line-height: 16px;
 }
 
-.lightbox_background {
-		opacity: 0.8;
-	-moz-opacity: 0.8;
-	filter:alpha(opacity=80);
-}
-
-.lightbox {
-}
-
-.code {
+.chat_history {
 	width: 80%;
-	height: 500px;
-	background-color: #ffffff;
-	border: solid 5px #DDD;
-}
-
-.code .code_panel {
-	text-align: left;
+	height: 150px;
 	overflow: auto;
-	height: 420px;
-	border-bottom: solid 1px #DDD;
-	padding: 20px;
-	margin-bottom: 7px;
+	background-color: #ffffff;
+	border: solid 1px black;
+	padding: 12px;
+	font-size: 110%;
 }
 
+.chat_history .username {
+	font-weight: bold;
+	color: #0000ff;
+}
+
+.chat_history .message {
+	color: #888;
+}
